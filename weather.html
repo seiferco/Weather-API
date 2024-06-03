@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+    <title>Weather Comparison</title>
+    
+</head>
+<body>
+    <header>
+        <h1>5 - Day - Weather - Comparison</h1>
+    </header>
+
+    <form>
+        <p>
+            <label for="city1">Location 1 - City:</label>
+            <input type="text" id="city1" name="city1">
+            
+            <label for="state1">State:</label>
+            <select id="state1"></select>
+        </p>
+
+        <p>
+            <label for="city2">Location 2 - City:</label>
+            <input type="text" id="city2" name="city2">
+            
+            <label for="state2">State:</label>
+            <select id="state2"></select>
+        </p>
+
+        <p>
+            <label for="temperatureUnit">Temperature Unit:</label>
+            <input type="radio" id="celsius" name="temperatureUnit" value="celsius">
+            <label for="celsius">Celsius</label>
+            <input type="radio" id="fahrenheit" name="temperatureUnit" value="fahrenheit">
+            <label for="fahrenheit">Fahrenheit</label>
+        </p>
+
+        <p>
+            <button type="button" id="compareBtn">Compare</button>
+        </p>
+    </form>
+
+    <section id="allTables">
+        <div id="resultArea1" hidden>
+            <table id="weatherTable1">
+                <caption id="tableCaption1"></caption>
+                <th>Day</th><th>High</th><th>Low</th><th>Rain</th><th>Outlook</th>
+            </table>
+        </div>
+
+        <div id="resultArea2" hidden>
+            <table id="weatherTable2">
+                <caption id="tableCaption2"></caption>
+                <th>Day</th><th>High</th><th>Low</th><th>Rain</th><th>Outlook</th>
+            </table>
+        </div>
+    </section>
+
+    <div id="error-message"></div>
+
+    <script src="weather.js"></script>
+</body>
+<footer>By Cole Seifert 5/14/2024</footer>
+</html>

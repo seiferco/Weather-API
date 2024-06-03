@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(233, 234, 235);
+}
+
+button {
+    background-color: rgb(62, 62, 173);
+    color:aliceblue;
+}
+
+header {
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+
+body {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+label {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+caption {
+    margin: 3px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#allTables {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin: 10px;
+}
+table,
+td {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+th {
+    background-color: gray;
+    border: 1px solid black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+input[type = "radio"]:checked {
+    box-shadow: 0 0 0 0.5px #333;
+    background-color: yellow
+}
+
+
+#error-message {
+    color: red;
+}
+
+footer {
+    border: 1px solid black;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: lightgray;
+    padding: 3px;
+    margin-top: 20px;
+}
